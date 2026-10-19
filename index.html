@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>내 영화 보드</title>
- <!-- 구글 폰트 <link> 두세 줄을 여기에 붙여 넣기 -->
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 영화 보드</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1>내 영화 보드</h1>
-  <section class="hero">
- <h2>요즘 내가 고른 영화 다섯 편</h2>
- <p>포스터 위에 마우스를 올려 보세요.</p>
-</section>
- <article class="card">
-<img class="poster" src="https://image.tmdb.org/t/p/w342//gDN2NWtHbs8ZWEBQM8Dh5OVXdb4.jpg" alt="영화 제목 포스터">
- <span class="badge">8.4</span>
- <div class="info">
- <h2>제목</h2>
- <p class="year">2014</p>
- <p class="overview"> 영화 인터스텔라는 기후 변화와 식량 위기로 죽어가는 지구를 떠나, 인류가 살 수 있는 새로운 행성을 찾기 위해 우주로 떠나는 탐사대와 그들을 기다리는 가족의 사랑을 그린 SF 대서사시입니다. 상대성 이론과 블랙홀 등 실제 물리학 법칙을 시각적으로 경이롭게 구현해 낸 작품입니다.<
-.</p>
- </div>
- </article>
- <footer>
- <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
- This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
- <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org)</p>
- </footer>
- <section class="board" id="board">
- <!-- 영화 2: 메이즈러너 -->
-<article class="card">
-<img class="poster" src="https://i.namu.wiki/i/yd6wnRIWEVMFY3wNjB-WKc0_nXstbPdiq87sfkbe3wJ8y2ZAhoZAfpebxEgc9bU1xIQh2OmD7Oi12CkFDhWbag.webp" alt="메이즈러너 포스터">
-<span class="badge">8.4</span>
-<div class="info">
- <h2>메이즈러너</h2>
-<p class="year">2014</p>
-<p class="overview">영화 《메이즈 러너》는 기억을 잃은 채 거대한 미로에 갇힌 소년들이 괴물들의 습격을 피해 목숨을 건 탈출을 감행하며, 자신들을 실험 도구로 삼은 거대 조직 '위키드'의 음모에 맞서 싸우는 생존 SF 디스토피아 이야기입니다..</p>
-</div>
-</article>
-<article class="card">
-<img class="poster" src="https://namu.wiki/w/%EA%B8%B0%EC%83%9D%EC%B6%A9%28%EC%98%81%ED%99%94%29" alt="기생충 포스터">
-<span class="badge">8.5</span>
-<div class="info">
-<h2>기생충</h2>
-<p class="year">2019</p>
-<p class="overview">전원 백수인 극빈층 기택네 가족이 IT 기업 CEO인 박 사장네 저택에 위조 서류를 이용해 전원 취업하면서 벌어지는 걷잡을 수 없는 사건을 다룬 블랙 코미디 잔혹극입니다.</p>
-</div>
-</article>
- <article class="card">
-<img class="poster" src="https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC:%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4-_%EC%97%94%EB%93%9C%EA%B2%8C%EC%9E%84_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg" alt="어벤져스: 엔드게임 포스터">
-<span class="badge">8.2</span>
-<div class="info">
-<h2>어벤져스: 엔드게임</h2>
-<p class="year">2019</p>
-<p class="overview">《어벤져스: 엔드게임》은 타노스의 핑거스냅으로 전 우주 생명체의 절반이 사라진 절망적인 상황에서, 살아남은 어벤져스 멤버들이 시간 여행을 통해 전세를 역전시키고 사라진 이들을 되살리는 최후의 전쟁을 그린 이야기입니다</p>
-</div>
-</article>
-<article class="card">
-<img class="poster" src="https://namu.wiki/w/%ED%83%80%EC%A7%9C%28%EC%98%81%ED%99%94%29
-<span class="badge">8.1</span>
-<div class="info">
-<h2>타짜</h2>
-<p class="year">2006</p>
-<p class="overview">타짜는 가구 공장에서 일하던 평범한 청년 고니(조승우)가 사기도박으로 돈을 모두 잃은 후, 전설의 타짜 평경장(백윤식)을 만나 전문 타짜로 성장하며 도박판의 인간 군상들과 얽히는 복수와 파멸의 이야기를 그린 영화입니다</p>
-</div>
-</article>
+
+    <!-- 헤더 영역 -->
+    <header class="top">
+        <h1>내 영화 보드</h1>
+        <nav>
+            <ul>
+                <li><a href="#board">보드</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="detail.html">상세</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 히어로 영역 -->
+    <section class="hero">
+        <h2>재밌게 본 영화 다섯 편</h2>
+    </section>
+
+    <main>
+        <!-- 영화 보드 그리드 영역 -->
+        <section class="board" id="board">
+            <!-- 카드 1 -->
+            <article class="card">
+                <img class="poster" src="https://media.themoviedb.org/t/p/w300_and_h450_face/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg" alt="인터스텔라 포스터">
+                <span class="badge">8.4</span>
+                <div class="info">
+                    <h2>인터스텔라</h2>
+                    <p class="year">2014</p>
+                    <p class="overview">지구 생태계의 파괴로 인류가 멸종 위기에 처하자, 전직 NASA 조종사 쿠퍼는 인류가 살 수 있는 새로운 행성을 찾기 위해 웜홀 너머의 우주로 탐사를 떠납니다.
+
+시간이 서로 다르게 흐르는 여러 외계 행성을 거치는 위험천만한 고뇌 끝에, 쿠퍼는 블랙홀 속 5차원 공간에서 시공간을 넘어 딸 머프에게 인류를 구원할 핵심 중력 데이터를 전달하는 데 성공합니다.
+
+이 데이터를 바탕으로 머프는 인류를 구해내고, 우주에서 구조되어 노인이 된 딸과 재회한 쿠퍼는 홀로 남은 탐사대원을 찾아 다시 우주로 떠납니다..</p>
+                </div>
+            </article>
+
+            <!-- 카드 2 -->
+            <article class="card">
+                <img class="poster" src="https://media.themoviedb.org/t/p/w300_and_h450_face/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="기생충 포스터">
+                <span class="badge">8.5</span>
+                <div class="info">
+                    <h2>기생충</h2>
+                    <p class="year">2019</p>
+                    <p class="overview">전원 백수인 기택네 가족은 장남 기우가 고액 과외 자리를 얻은 것을 시작으로 신분을 위장해 부유한 박 사장네 저택에 하나둘 취업합니다.
+
+박 사장네의 일상을 잠식하며 평화로운 공생을 이어가던 중, 이전 가정부의 비밀과 함께 숨겨져 있던 지하실의 존재가 드러나며 기택네의 계획이 뒤틀리기 시작합니다.
+
+결국 기층 간의 갈등과 걷잡을 수 없는 사건이 폭발하면서 파국을 맞이하고, 기택은 저택의 지하실에 갇힌 채 기우가 언젠가 그 집을 사겠다는 아득한 희망을 품으며 끝이 납니다.</p>
+                </div>
+            </article>
+
+            <!-- 카드 3 -->
+            <article class="card">
+                <img class="poster" src="https://media.themoviedb.org/t/p/w300_and_h450_face/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg" alt="쇼생크 탈출 포스터">
+                <span class="badge">8.7</span>
+                <div class="info">
+                    <h2>쇼생크 탈출</h2>
+                    <p class="year">1994</p>
+                    <p class="overview">아내와 그녀의 불륜 남성을 살해했다는 누명을 쓰고 악명 높은 쇼생크 교도소에 수감된 은행가 앤디 듀프레인은 절망적인 환경 속에서도 희망을 잃지 않고 동료 레드와 우정을 쌓아갑니다.
+
+앤디는 자신의 재무 지식을 활용해 소장과 간수들의 세금 감면과 비자금 세척을 도와주며 신뢰를 얻는 한편, 교도소 내 도서관을 설립하고 동료들에게 희망을 전합니다.
+
+결국 자신에게 누명을 벗길 기회가 무참히 짓밟히자, 앤디는 19년 동안 벽을 파내어 준비해 온 치밀한 탈옥을 성공시키고 소장의 비리를 폭발시킨 뒤 자유의 땅에서 레드와 재회합니다.</p>
+                </div>
+            </article>
+
+            <!-- 카드 4 -->
+            <article class="card">
+                <img class="poster" src="https://media.themoviedb.org/t/p/w300_and_h450_face/buxBvftqx3g57FTYtdrfGSHlWfQ.jpg" alt="어벤져스: 엔드게임 포스터">
+                <span class="badge">8.3</span>
+                <div class="info">
+                    <h2>어벤져스: 엔드게임</h2>
+                    <p class="year">2019</p>
+                    <p class="overview">타노스의 핑거 스냅으로 전 우주 생명체의 절반이 사라진 5년 뒤, 살아남은 어벤져스 멤버들은 양자 영역을 통한 시간 여행으로 인피니티 스톤을 모아 사라진 이들을 되돌릴 계획을 세웁니다.
+
+과거로 돌아가 스톤을 모두 수집하는 데 성공한 어벤져스는 사라졌던 동료들을 되살려내지만, 그 과정에서 추적해 온 과거의 타노스 군단과 인류의 운명을 건 최후의 전면전을 벌이게 됩니다.
+
+마침내 아이언맨이 자신을 희생하여 인피니티 스톤을 사용해 타노스 군단을 소멸시키고, 우주에 다시 평화를 가져오며 11년간 이어진 대서사의 막을 내립니다.</p>
+                </div>
+            </article>
+
+            <!-- 카드 5 -->
+            <article class="card">
+                <img class="poster" src="https://media.themoviedb.org/t/p/w300_and_h450_face/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt="센과 치히로의 행방불명 포스터">
+                <span class="badge">8.5</span>
+                <div class="info">
+                    <h2>센과 치히로의 행방불명</h2>
+                    <p class="year">2001</p>
+                    <p class="overview">이사 가던 중 우연히 신들의 세계로 들어간 10살 소녀 치히로의 부모님이 돼지로 변하자, 치히로는 부모님을 구하고 인간 세계로 돌아가기 위해 온천장 주인이자 마녀인 유바바 밑에서 '센'이라는 이름으로 일하게 됩니다.
+
+괴물 가오나시와 상처 입은 용 하쿠 등 여러 존재들을 만나 마음을 나누고, 소중한 친구들을 돕는 과정에서 점차 용기와 자립심을 가진 아이로 성장해 나갑니다.
+
+마침내 하쿠의 진짜 이름을 찾아주어 그를 해방시키고 유바바의 시험을 통과한 센은, 원래의 이름을 되찾고 무사히 부모님과 함께 인간 세계로 돌아갑니다..</p>
+                </div>
+            </article>
+        </section>
 
 </body>
 </html>
